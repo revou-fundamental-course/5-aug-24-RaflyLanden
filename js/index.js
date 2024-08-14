@@ -16,17 +16,17 @@ function formValidate() {
         // Tentukan kategori BMI
         let message = "";
         if (jumlah < 18.5) {
-            message = "Kurus";
+            message = "Kekurangan berat badan";
         } else if (jumlah >= 18.5 && jumlah < 24.9) {
-            message = "Normal";
+            message = "Normal (ideal)";
         } else if (jumlah >= 25 && jumlah < 29.9) {
-            message = "Gemuk";
+            message = "Kelebihan berat badan";
         } else {
-            message = "Obesitas";
+            message = "Kegemukan (Obesitas)";
         }
 
         // Tampilkan hasil BMI dan pesan
-        hasilElement.innerHTML = `BMI kamu adalah ${jumlah.toFixed(2)} - ${message}`;
+        hasilElement.innerHTML = `BMI kamu adalah ${jumlah.toFixed(2)} = ${message}`;
     }
 }
 
