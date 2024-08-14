@@ -1,0 +1,58 @@
+.main-title {
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+
+
+form{
+    background-color: cadetblue;
+    padding: 12px;
+}
+
+.kiri{
+    padding-right: 5%;
+}
+
+.Kelamin{
+    margin-bottom: 25px;
+}
+
+.kg{
+    margin-bottom: 25px;
+}
+
+.usia{
+    margin-bottom: 25px;
+}
+
+.tinggi{
+    margin-bottom: 25px;
+}
+
+.submit{
+    background-color: rgb(73, 128, 192);
+    color: whitesmoke;
+}
+
+button{
+    height: 25px;
+    width: 80px;
+    align-items: start;
+    border: none;
+    border-radius: 20%;
+}
+
+ol{
+    padding-left: 7%;
+    margin: 0%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    main{
+        flex-direction: column;
+    }
+}
