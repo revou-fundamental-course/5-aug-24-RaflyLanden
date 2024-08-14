@@ -1,5 +1,4 @@
 
-
 main{
     display: flex;
 }
@@ -44,12 +43,8 @@ article, form, section {
     margin-bottom: 20px;
 }
 
-
-
-
-
 form{
-    background-color: cadetblue;
+    background-color: rgb(217, 223, 224);
     padding: 12px;
 }
 
@@ -89,6 +84,20 @@ button{
 ol{
     padding-left: 7%;
     margin: 0%;
+}
+
+.hasil-penginputan{
+    text-align: center;
+}
+
+.informasi-BMI{
+    text-align: center;
+}
+
+.tabel{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
 }
 
 
