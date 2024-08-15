@@ -4,6 +4,7 @@ function formValidate() {
     let inputHeight = parseFloat(document.getElementById("input-height").value);
     let hasilElement = document.getElementById("hasil");
 
+    //melihat input sudah terisi atau belum
     if (isNaN(inputWeight) || isNaN(inputHeight) || inputWeight <= 0 || inputHeight <= 0) {
         alert('Inputan berat badan atau tinggi kosong atau tidak valid.');
     } else {
@@ -13,7 +14,7 @@ function formValidate() {
         let resultHeight = Math.pow(convertCmToM, 2);
         let jumlah = inputWeight / resultHeight;
 
-        // Tentukan kategori BMI
+        // Menentukan kategori BMI
         let message = "";
         if (jumlah < 18.5) {
             message = "Kekurangan berat badan";
