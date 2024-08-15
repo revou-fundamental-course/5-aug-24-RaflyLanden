@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Document</title>
+    <title>Projek RevoU</title>
 
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -30,24 +30,24 @@
                 
                 <div class="usia">
                     <label>Usia (Tahun)</label><br>
-                    <input type="number" placeholder="Masukkan Usia">
+                    <input type="number" class="isi" placeholder="Masukkan Usia">
                 </div>
 
                 <div class="kg">
                     <label>Berat Badan (kg)</label><br>
-                    <input type="number" id="input-weight" placeholder="Masukkan Berat Badan">
+                    <input type="number" class="isi" id="input-weight" placeholder="Masukkan Berat Badan">
                 </div>
         
                 <div class="tinggi">
                     <label>Tinggi Badan (cm)</label><br>
-                    <input type="number" id="input-height" placeholder="Masukkan Tinggi Badan">
+                    <input type="number" class="isi" id="input-height" placeholder="Masukkan Tinggi Badan">
                 </div>
         
                 <button class="submit" type="button" onclick="formValidate()">Hitung BMI</button>
                 <button class="reset"  type="button" onclick="resetForm()">Reset</button>
             </form>
         
-            <h4>
+            <h4 class="keunggulan">
                 Keunggulan Fitur
             </h4>
             
@@ -88,7 +88,7 @@
                     dan kekhawatiran Anda terkait dengan berat badan anda.
                 </p>
 
-                <form class="informasi-BMI">
+                <div class="informasi-BMI">
                     <h4>Informasi Tentang BMI</h4>
                     <table class="tabel" border="1">
                         <tr>
@@ -112,9 +112,42 @@
                             <td>Kegemukan (Obesitas)</td>
                         </tr>
                     </table>
-                    <button>Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button>Registrasi Online Ahli Gizi</button>
+
+                    <div class="button-container">
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwib0I2i_vWHAxUEEoMDHQzUBVUYABABGgJzZg&co=1&ase=2&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxrFUCReOgJQg_hZKmBYfqMCrvlFWq5qDJgiBzAgMi4WBszrJ612IMsaAk3jEALw_wcB&ohost=www.google.com&cid=CAESVuD2CcoUDjx317JsRolO-PErICfld2yVI9yu11e1KzE87jjO3sXntZgpwOCi52sHUEHxSIuYw_v3a4FNVLkjfUAIQR2DsHGYkrTlKnMWGRCa0v34_GLz&sig=AOD64_2bscGy0kzkMGtD6UtOe4EVVyOfbA&q&nis=4&adurl&ved=2ahUKEwiW3Ymi_vWHAxU8d2wGHUfTFDQQ0Qx6BAgIEAE" class="ahli-gizi">Konsultasi Ahli Gizi</a>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwib0I2i_vWHAxUEEoMDHQzUBVUYABABGgJzZg&co=1&ase=2&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxrFUCReOgJQg_hZKmBYfqMCrvlFWq5qDJgiBzAgMi4WBszrJ612IMsaAk3jEALw_wcB&ohost=www.google.com&cid=CAESVuD2CcoUDjx317JsRolO-PErICfld2yVI9yu11e1KzE87jjO3sXntZgpwOCi52sHUEHxSIuYw_v3a4FNVLkjfUAIQR2DsHGYkrTlKnMWGRCa0v34_GLz&sig=AOD64_2bscGy0kzkMGtD6UtOe4EVVyOfbA&q&nis=4&adurl&ved=2ahUKEwiW3Ymi_vWHAxU8d2wGHUfTFDQQ0Qx6BAgIEAE" class="ahli-gizi">Registrasi Online Ahli Gizi</a>
+                    </div>
+                    
                 </form>
+
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh
+                    dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjur mengenai resiko
+                    dan kekhawatiran Anda terkait dengan berat badan anda.
+                </p>
+
+                <form>
+                    <p class="penyakit-kegemukan">
+                        Beberapa penyakit yang berasal dari kegemukan
+                    </p>
+                    <p class="penyakit">
+                        Diabetes<br>Hipertensi<br>Sakit Jantung<br>Osteoarthiritis
+                    </p>
+
+                    <div class="button-container">
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwib0I2i_vWHAxUEEoMDHQzUBVUYABABGgJzZg&co=1&ase=2&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxrFUCReOgJQg_hZKmBYfqMCrvlFWq5qDJgiBzAgMi4WBszrJ612IMsaAk3jEALw_wcB&ohost=www.google.com&cid=CAESVuD2CcoUDjx317JsRolO-PErICfld2yVI9yu11e1KzE87jjO3sXntZgpwOCi52sHUEHxSIuYw_v3a4FNVLkjfUAIQR2DsHGYkrTlKnMWGRCa0v34_GLz&sig=AOD64_2bscGy0kzkMGtD6UtOe4EVVyOfbA&q&nis=4&adurl&ved=2ahUKEwiW3Ymi_vWHAxU8d2wGHUfTFDQQ0Qx6BAgIEAE" class="ahli-gizi">Konsultasi Ahli Gizi</a>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwib0I2i_vWHAxUEEoMDHQzUBVUYABABGgJzZg&co=1&ase=2&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxrFUCReOgJQg_hZKmBYfqMCrvlFWq5qDJgiBzAgMi4WBszrJ612IMsaAk3jEALw_wcB&ohost=www.google.com&cid=CAESVuD2CcoUDjx317JsRolO-PErICfld2yVI9yu11e1KzE87jjO3sXntZgpwOCi52sHUEHxSIuYw_v3a4FNVLkjfUAIQR2DsHGYkrTlKnMWGRCa0v34_GLz&sig=AOD64_2bscGy0kzkMGtD6UtOe4EVVyOfbA&q&nis=4&adurl&ved=2ahUKEwiW3Ymi_vWHAxU8d2wGHUfTFDQQ0Qx6BAgIEAE" class="ahli-gizi">Registrasi Online Ahli Gizi</a>
+                    </div>
+                </form>
+
+                <p class="download">Download Aplikasi</p>
+                <a href="https://play.google.com/store/games?hl=id" class="logo-link">
+                    <img src="logo/playstore.png" alt="Logo">
+                </a>
+                <a href="https://www.apple.com/id/app-store/" class="logo-link">
+                    <img src="logo/appstore.png" alt="Logo">
+                </a>
+                
 
             </section>
         </aside>
