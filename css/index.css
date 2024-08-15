@@ -1,7 +1,4 @@
 
-main{
-    display: flex;
-}
 
 body {
     display: flex;
@@ -10,6 +7,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Gaya untuk elemen header */
 header {
     background-color: #3159aa;
     color: white;
@@ -17,6 +15,7 @@ header {
     text-align: center;
 }
 
+/* Mengatur layout utama dengan flex dan memberi ruang antara elemen */
 main {
     display: flex;
     justify-content: space-between;
@@ -27,6 +26,7 @@ main {
     margin: none;
 }
 
+/* Mengatur tampilan untuk kedua sisi (kiri dan kanan) */
 aside.kiri, aside.kanan {
     flex: 1;
     padding: 20px;
@@ -35,59 +35,43 @@ aside.kiri, aside.kanan {
     border-radius: 5px;
 }
 
-aside.kiri {
-    margin-right: 10px;
-}
-
-aside.kanan {
-    margin-left: 10px;
-}
-
+/* Mengatur margin untuk elemen artikel, form, dan section */
 article, form, section {
     margin-bottom: 20px;
 }
 
+/* Mengatur untuk meratakan teks */
 p{
     text-align: start;
 }
 
-
+/* Mengatur gaya form */
 form{
     background-color: rgb(217, 223, 224);
     padding: 12px;
 }
 
+/* Gaya untuk input */
 .isi{
-    height: 25px;
+    margin-top: 7px;
+    height: 30px;
     width: 80%;
     border-radius: 7px;
+    padding-left: 12px;
 }
 
-.kiri{
-    padding-right: 5%;
-}
-
-.Kelamin{
+/* Menambahkan margin pada 4 inputan */
+.Kelamin, .kg, .usia, .tinggi{
     margin-bottom: 25px;
 }
 
-.kg{
-    margin-bottom: 25px;
-}
-
-.usia{
-    margin-bottom: 25px;
-}
-
-.tinggi{
-    margin-bottom: 25px;
-}
-
+/* Gaya untuk Tombol Submit*/
 .submit{
     background-color: rgb(73, 128, 192);
     color: whitesmoke;
 }
 
+/* Gaya untuk semua Tombol*/
 button{
     height: 35px;
     width: 100px;
@@ -96,15 +80,18 @@ button{
     border-radius: 7px;
 }
 
+/*Gaya untuk tombol Reset*/
 .reset{
     width: 70px;
 }
 
+/* Gaya untuk daftar berurut*/
 ol{
     padding-left: 4%;
     
 }
 
+/* Gaya untuk merata tengahkan hasil penginputan*/
 .hasil-penginputan{
     text-align: center;
 }
@@ -113,6 +100,7 @@ ol{
     text-align: center;
 }
 
+/* Gaya untuk Tabel */
 .tabel{
     width: 100%;
     text-align: center;
@@ -120,12 +108,14 @@ ol{
     margin-bottom: 25px;
 }
 
+/* Gaya untuk tombol */
 .button-container{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
+/* Gaya untuk Tombol Ahli Gizi*/
 .ahli-gizi{
     display: inline-block;
     background-color: rgb(73, 128, 192);
@@ -139,6 +129,7 @@ ol{
     border-radius: 5px;
 }
 
+/* Untuk merata tengahkan tulisan pada penyakit*/
 .penyakit{
     text-align: center;
     justify-content: center;
@@ -152,20 +143,22 @@ ol{
     margin: none;
 }
 
+
 .download{
     text-align: center;
 }
 
+/* Menyesuaikan besar logo*/
 .logo-link img {
     width: 150px;
     height: 50px;
-    /* Contoh penyesuaian tambahan */
     padding: 5px;
     transition: transform 0.3s;
 }
 
+/* Memperbesar logo saat di-hover */
 .logo-link img:hover {
-    transform: scale(1.1); /* Memperbesar logo saat di-hover */
+    transform: scale(1.1);
 }
 
 
